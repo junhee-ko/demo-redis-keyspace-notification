@@ -20,8 +20,8 @@ public class RedisMessagePublisher {
     String key = "hello";
     String value = "world";
     long expireTime = 3L;
-
     log.info("key : {}, value : {}, expire seconds : {}", key, value, expireTime);
+
     redisTemplate.opsForValue().set(key, value, expireTime, TimeUnit.SECONDS);
   }
 }

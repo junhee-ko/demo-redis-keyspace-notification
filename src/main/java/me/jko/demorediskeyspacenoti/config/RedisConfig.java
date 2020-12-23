@@ -10,10 +10,8 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
-import lombok.extern.slf4j.Slf4j;
 import me.jko.demorediskeyspacenoti.client.subscriber.RedisMessageSubscriber;
 
-@Slf4j
 @Configuration
 public class RedisConfig {
 
